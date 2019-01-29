@@ -3,17 +3,14 @@ package com.zhoujian.rxjava.activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
-
 import com.zhoujian.rxjava.R;
 import com.zhoujian.rxjava.bean.Actor;
 import com.zhoujian.rxjava.bean.Movie;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.Callable;
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.TimeUnit;
-
 import io.reactivex.Notification;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
