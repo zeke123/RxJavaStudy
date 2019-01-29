@@ -46,7 +46,6 @@ public class MainActivity extends AppCompatActivity {
         //观察者（Observer）
         //订阅（subscribe）
 
-
         //首先在 gradle 文件中添加依赖：
         //implementation 'io.reactivex.rxjava2:rxjava:2.1.4'
         //implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
