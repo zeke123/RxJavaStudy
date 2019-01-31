@@ -210,7 +210,7 @@ public class MainActivity extends AppCompatActivity {
 
         //ambMethod();
 
-        defaultIfEmptyMethod();
+        //defaultIfEmptyMethod();
 
 
     }
