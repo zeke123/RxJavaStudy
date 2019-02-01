@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
 
         //doOnDisposeMethod();
 
-        //doOnLifecycleMethod();
+        doOnLifecycleMethod();
 
         //doOnTerminateMethod();
 
@@ -1145,7 +1145,6 @@ public class MainActivity extends AppCompatActivity {
                 Log.i(TAG, "=======================aLong " + aLong);
             }
         });
-
 
     }
 
