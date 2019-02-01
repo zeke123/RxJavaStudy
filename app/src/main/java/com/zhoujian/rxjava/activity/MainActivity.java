@@ -85,6 +85,11 @@ public class MainActivity extends AppCompatActivity {
         //errorMethod();
 
 
+
+
+
+
+
         //2.转换操作符
 
         //mapMethod();
@@ -465,6 +470,7 @@ public class MainActivity extends AppCompatActivity {
     Integer i = 100;
 
     private void deferMethod() {
+
         //defer():这个方法的作用就是直到被观察者被订阅后才会创建被观察者
         Observable<Integer> observable = Observable.defer(new Callable<ObservableSource<? extends Integer>>() {
             @Override
@@ -497,6 +503,7 @@ public class MainActivity extends AppCompatActivity {
         observable.subscribe(observer);
         i = 300;
         observable.subscribe(observer);
+
     }
 
     private void timerMethod() {
@@ -576,8 +583,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-
     }
 
 
@@ -634,9 +639,9 @@ public class MainActivity extends AppCompatActivity {
                 Log.i(TAG, "==================onComplete");
             }
         });
-
-
     }
+
+
 
     private void neverMethod() {
 
@@ -928,7 +933,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
     }
 
 
