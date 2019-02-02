@@ -2173,7 +2173,6 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
     private void distinctUntilChangedMethod() {
         //distinctUntilChanged():过滤掉连续重复的事件
 
