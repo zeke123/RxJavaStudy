@@ -197,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
 
         //6. 条件操作符
 
-        allMethod();
+        //allMethod();
 
         //takeWhileMethod();
 
@@ -215,7 +215,7 @@ public class MainActivity extends AppCompatActivity {
 
         //ambMethod();
 
-        //defaultIfEmptyMethod();
+        defaultIfEmptyMethod();
 
 
     }
@@ -2304,6 +2304,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+
+
+
     private void allMethod() {
         //all():判断事件序列是否全部满足某个事件，如果都满足则返回 true，反之则返回 false
 
@@ -2319,6 +2322,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
+
 
     private void takeWhileMethod() {
         //takeWhile():可以设置条件，当某个数据满足条件时就会发送该数据，反之则不发送
@@ -2370,6 +2376,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+
+
     private void skipUntilMethod() {
 
         //skipUntil():当 skipUntil() 中的 Observable 发送事件了，原来的 Observable 才会发送事件给观察者
@@ -2407,6 +2415,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
 
     private void containsMethod() {
         // contains():判断事件序列中是否含有某个元素，如果有则返回 true，如果没有则返回 false
