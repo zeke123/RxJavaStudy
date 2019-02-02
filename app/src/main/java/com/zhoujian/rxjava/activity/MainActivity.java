@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
 
         //doOnDisposeMethod();
 
-        doOnLifecycleMethod();
+        //doOnLifecycleMethod();
 
         //doOnTerminateMethod();
 
@@ -197,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
 
         //6. 条件操作符
 
-        //allMethod();
+        allMethod();
 
         //takeWhileMethod();
 
@@ -1732,8 +1732,6 @@ public class MainActivity extends AppCompatActivity {
 
     private void onExceptionResumeNextMethod() {
         //onExceptionResumeNext():与 onErrorResumeNext() 作用基本一致，但是这个方法只能捕捉 Exception
-
-
         Observable.create(new ObservableOnSubscribe<Integer>() {
             @Override
             public void subscribe(ObservableEmitter<Integer> e) throws Exception {
@@ -1773,13 +1771,12 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
     }
 
 
     private void retryMethod() {
-        // retry():如果出现错误事件，则会重新发送所有事件序列。times 是代表重新发的次数
 
+        // retry():如果出现错误事件，则会重新发送所有事件序列。times 是代表重新发的次数
         Observable.create(new ObservableOnSubscribe<Integer>() {
             @Override
             public void subscribe(ObservableEmitter<Integer> e) throws Exception {
@@ -1796,7 +1793,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onNext(Integer integer) {
-
+                Log.i(TAG, "==================onNext= "+integer);
             }
 
             @Override
@@ -1811,8 +1808,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
+    Integer a = 6;
     private void retryUntilMethod() {
+
         //retryUntil():出现错误事件之后，可以通过此方法判断是否继续发送事件
 
         Observable.create(new ObservableOnSubscribe<Integer>() {
@@ -1826,10 +1824,10 @@ public class MainActivity extends AppCompatActivity {
         }).retryUntil(new BooleanSupplier() {
             @Override
             public boolean getAsBoolean() throws Exception {
-                if (i == 6) {
+                if (a == 6) {
                     return true;
                 }
-                return false;
+                return true;
             }
         }).subscribe(new Observer<Integer>() {
             @Override
@@ -1839,7 +1837,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onNext(Integer integer) {
-                i += integer;
+                a += integer;
                 Log.i(TAG, "==================onNext " + integer);
             }
 
