@@ -2269,6 +2269,8 @@ public class MainActivity extends AppCompatActivity {
                 Log.i(TAG, "====================firstElement " + integer);
             }
         });
+
+
     }
 
     private void lastElementMethod() {
@@ -2280,8 +2282,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
-
     private void elementAtMethod() {
         //elementAt() :可以指定取出事件序列中事件，但是输入的 index 超出事件序列的总数的话就不会出现任何结果
         //这种情况下，你想发出异常信息的话就用 elementAtOrError()
