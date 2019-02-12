@@ -2269,7 +2269,6 @@ public class MainActivity extends AppCompatActivity {
                 Log.i(TAG, "====================firstElement " + integer);
             }
         });
-
     }
 
     private void lastElementMethod() {
