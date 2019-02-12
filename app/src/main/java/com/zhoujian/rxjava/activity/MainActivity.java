@@ -31,6 +31,7 @@ import io.reactivex.schedulers.Schedulers;
 
 public class MainActivity extends AppCompatActivity {
 
+
     public static final String TAG = "MainActivity";
 
     @Override
